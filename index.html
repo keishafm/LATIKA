@@ -1,272 +1,246 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MMJ Digital Space — Multimedia Jurnalistik SMKN 1 Singosari</title>
-  <meta name="description" content="MMJ Digital Space adalah ruang digital Multimedia Jurnalistik SMK Negeri 1 Singosari untuk dokumentasi, berita, profil anggota, kritik dan saran, serta galeri desain." />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMJ Digital Space | Multimedia Jurnalistik SMKN 1 Singosari</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-navy text-gray-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#/" class="brand">
-        <img src="https://placehold.co/48x48/0b1220/ffffff?text=MMJ" alt="Logo MMJ" class="brand-logo" id="brandLogo" />
-        <span class="brand-text">
-          <strong>MMJ Digital Space</strong>
-          <small>Multimedia Jurnalistik · SMKN 1 Singosari</small>
-        </span>
-      </a>
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-navy/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition">
+                    MM
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-wide block text-white">MMJ Digital Space</span>
+                    <span class="text-xs text-gray-400 block">SMKN 1 Singosari</span>
+                </div>
+            </a>
 
-      <nav class="desktop-nav" aria-label="Navigasi utama">
-        <a href="#/" data-nav>Beranda</a>
-        <a href="#/memory-archive" data-nav>Memory Archive</a>
-        <a href="#/newsroom" data-nav>Newsroom</a>
-        <a href="#/members-hub" data-nav>Members Hub</a>
-        <a href="#/kritik-saran" data-nav>Kritik &amp; Saran</a>
-        <a href="#/design-showcase" data-nav>Desain-Desain</a>
-      </nav>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#home" class="nav-link active hover:text-cyan-400 transition">Beranda</a>
+                <a href="#archive" class="nav-link hover:text-cyan-400 transition">Memory Archive</a>
+                <a href="#newsroom" class="nav-link hover:text-cyan-400 transition">Newsroom</a>
+                <a href="#members" class="nav-link hover:text-cyan-400 transition">Members Hub</a>
+                <a href="#designs" class="nav-link hover:text-cyan-400 transition">Design Showcase</a>
+                <a href="#feedback" class="nav-link hover:text-cyan-400 transition">Kritik & Saran</a>
+            </nav>
 
-      <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-card border-b border-gray-800 px-6 py-6 space-y-4 shadow-2xl">
+            <a href="#home" class="mobile-link block text-base font-medium hover:text-cyan-400">Beranda</a>
+            <a href="#archive" class="mobile-link block text-base font-medium hover:text-cyan-400">Memory Archive</a>
+            <a href="#newsroom" class="mobile-link block text-base font-medium hover:text-cyan-400">Newsroom</a>
+            <a href="#members" class="mobile-link block text-base font-medium hover:text-cyan-400">Members Hub</a>
+            <a href="#designs" class="mobile-link block text-base font-medium hover:text-cyan-400">Design Showcase</a>
+            <a href="#feedback" class="mobile-link block text-base font-medium hover:text-cyan-400">Kritik & Saran</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER / SECTIONS -->
+    <main class="pt-20">
+
+        <!-- 1. BERANDA SECTION -->
+        <section id="home" class="min-h-[90vh] flex items-center justify-center relative overflow-hidden px-4 py-20">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-900/20 via-navy to-navy -z-10"></div>
+            <div class="max-w-4xl mx-auto text-center space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/80 border border-gray-700 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wider uppercase backdrop-blur-sm">
+                    <i class="fa-solid fa-circle-dot text-[10px] animate-pulse"></i> Multimedia Jurnalistik · SMK Negeri 1 Singosari
+                </div>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight">
+                    Setiap momen <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">punya cerita.</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 font-medium tracking-wide uppercase">
+                    CAPTURE THE MOMENT, PRESERVE THE STORY.
+                </p>
+
+                <!-- Shortcut Cards on Home -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 text-left">
+                    <a href="#archive" class="group bg-navy-card border border-gray-800 p-6 rounded-2xl hover:border-cyan-500/50 transition duration-300 shadow-xl">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-photo-film"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition">Memory Archive</h3>
+                        <p class="text-sm text-gray-400 mt-2">Jelajahi dokumentasi foto & video kegiatan sekolah terlengkap.</p>
+                    </a>
+                    <a href="#newsroom" class="group bg-navy-card border border-gray-800 p-6 rounded-2xl hover:border-cyan-500/50 transition duration-300 shadow-xl">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition">Newsroom</h3>
+                        <p class="text-sm text-gray-400 mt-2">Berita terkini, artikel mendalam, dan hasil liputan jurnalistik.</p>
+                    </a>
+                    <a href="#members" class="group bg-navy-card border border-gray-800 p-6 rounded-2xl hover:border-cyan-500/50 transition duration-300 shadow-xl">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-users-viewfinder"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition">Members Hub</h3>
+                        <p class="text-sm text-gray-400 mt-2">Struktur organisasi, profil anggota, dan divisi Humas.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. MEMORY ARCHIVE -->
+        <section id="archive" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800/60">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Dokumentasi</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Memory Archive</h2>
+                </div>
+                <!-- Search & Filters -->
+                <div class="flex flex-wrap gap-3 items-center">
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input type="text" id="archive-search" placeholder="Cari kegiatan..." class="bg-navy-card border border-gray-800 rounded-xl pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500 w-60">
+                    </div>
+                    <div id="archive-filters" class="flex gap-2 overflow-x-auto pb-1">
+                        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-cyan-500 text-white transition whitespace-nowrap" data-filter="all">Semua</button>
+                        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition whitespace-nowrap" data-filter="event">Acara Sekolah</button>
+                        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition whitespace-nowrap" data-filter="competition">Lomba</button>
+                        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition whitespace-nowrap" data-filter="behind">Behind The Scenes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Archive Grid -->
+            <div id="archive-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Javascript will inject archive cards here -->
+            </div>
+        </section>
+
+        <!-- 3. NEWSROOM -->
+        <section id="newsroom" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800/60">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <span class="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Portal Berita</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Newsroom</h2>
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <div id="news-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Javascript will inject news cards here -->
+            </div>
+        </section>
+
+        <!-- News Detail Modal / View (Hidden by Default) -->
+        <div id="news-modal" class="fixed inset-0 z-50 bg-navy/95 backdrop-blur-xl hidden overflow-y-auto px-4 py-12">
+            <div class="max-w-3xl mx-auto bg-navy-card border border-gray-800 rounded-3xl p-6 sm:p-10 relative shadow-2xl">
+                <button id="close-news-modal" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-gray-800 text-gray-300 hover:text-white flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <div id="news-modal-content">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. MEMBERS HUB & DIVISI HUMAS -->
+        <section id="members" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800/60">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Organisasi</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Members Hub</h2>
+                <p class="text-gray-400 mt-3 text-sm">Pusat informasi struktur organisasi, anggota, serta pembagian divisi Multimedia Jurnalistik SMKN 1 Singosari.</p>
+            </div>
+
+            <!-- Division Tabs -->
+            <div class="flex justify-center gap-3 mb-12 flex-wrap">
+                <button class="member-tab active px-6 py-2.5 rounded-xl text-sm font-semibold bg-cyan-500 text-white transition shadow-lg shadow-cyan-500/20" data-target="all-members">Semua Anggota</button>
+                <button class="member-tab px-6 py-2.5 rounded-xl text-sm font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition" data-target="divisi-humas">Divisi Humas</button>
+                <button class="member-tab px-6 py-2.5 rounded-xl text-sm font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition" data-target="divisi-media">Divisi Media & Kreatif</button>
+                <button class="member-tab px-6 py-2.5 rounded-xl text-sm font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition" data-target="divisi-jurnalistik">Divisi Jurnalistik</button>
+            </div>
+
+            <!-- Content Area for Members / Humas Special Page -->
+            <div id="members-content-area">
+                <!-- Dynamically rendered -->
+            </div>
+        </section>
+
+        <!-- 5. DESIGN SHOWCASE -->
+        <section id="designs" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800/60">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Karya Anggota</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Design Showcase</h2>
+                </div>
+                <!-- Design Filters -->
+                <div id="design-filters" class="flex gap-2 overflow-x-auto pb-1">
+                    <button class="design-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-cyan-500 text-white transition whitespace-nowrap" data-filter="all">Semua Karya</button>
+                    <button class="design-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition whitespace-nowrap" data-filter="poster">Poster</button>
+                    <button class="design-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition whitespace-nowrap" data-filter="banner">Banner</button>
+                    <button class="design-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-navy-card border border-gray-800 text-gray-300 hover:border-gray-600 transition whitespace-nowrap" data-filter="feeds">Social Media Feeds</button>
+                </div>
+            </div>
+
+            <!-- Design Grid -->
+            <div id="design-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Javascript will inject design cards here -->
+            </div>
+        </section>
+
+        <!-- 6. KRITIK & SARAN -->
+        <section id="feedback" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800/60">
+            <div class="bg-navy-card border border-gray-800 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl">
+                <div class="absolute -right-20 -top-20 w-60 h-60 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mx-auto mb-6">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white">Kritik & Saran</h2>
+                <p class="text-gray-400 mt-3 max-w-lg mx-auto text-sm">
+                    Punya masukan, ide, atau evaluasi untuk kemajuan Multimedia Jurnalistik SMK Negeri 1 Singosari? Sampaikan melalui tautan resmi di bawah ini.
+                </p>
+                <div class="mt-8">
+                    <!-- Placeholder URL - silakan ganti dengan link Google Forms / Google Drive asli -->
+                    <a id="feedback-btn" href="https://forms.gle/placeholder" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-sm hover:opacity-90 transition shadow-lg shadow-cyan-500/25">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Formulir Kritik & Saran
+                    </a>
+                    <p class="text-xs text-gray-500 mt-4">*Tautan akan mengarah langsung ke Google Forms / Google Drive resmi MMJ.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX / IMAGE PREVIEW MODAL -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center p-4">
+        <button id="close-lightbox" class="absolute top-6 right-6 text-gray-400 hover:text-white text-3xl p-2 focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-5xl w-full max-h-[90vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Preview" class="max-h-[75vh] max-w-full object-contain rounded-xl shadow-2xl mb-4">
+            <h3 id="lightbox-title" class="text-white font-bold text-lg text-center"></h3>
+            <p id="lightbox-category" class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1"></p>
+        </div>
     </div>
 
-    <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile">
-      <a href="#/" data-nav>Beranda</a>
-      <a href="#/memory-archive" data-nav>Memory Archive</a>
-      <a href="#/newsroom" data-nav>Newsroom</a>
-      <a href="#/members-hub" data-nav>Members Hub</a>
-      <a href="#/kritik-saran" data-nav>Kritik &amp; Saran</a>
-      <a href="#/design-showcase" data-nav>Desain-Desain</a>
-    </nav>
-  </header>
-
-  <main id="app">
-    <!-- Beranda -->
-    <section class="page" id="page-home">
-      <div class="hero">
-        <div class="container hero-inner">
-          <img src="https://placehold.co/120x120/0b1220/ffffff?text=MMJ" alt="Logo MMJ" class="hero-logo" />
-          <p class="eyebrow">Multimedia Jurnalistik · SMK Negeri 1 Singosari</p>
-          <h1>MMJ Digital Space</h1>
-          <p class="tagline">CAPTURE THE MOMENT, PRESERVE THE STORY.</p>
-          <h2 class="headline">Setiap momen punya cerita.</h2>
-          <p class="hero-desc">
-            Ruang digital untuk menyimpan dokumentasi kegiatan, mempublikasikan liputan,
-            mengenal anggota organisasi, serta menampilkan karya desain Multimedia Jurnalistik.
-          </p>
+    <!-- FOOTER -->
+    <footer class="border-t border-gray-800 bg-navy-card py-12 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <p class="font-semibold text-gray-300">Multimedia Jurnalistik · SMK Negeri 1 Singosari</p>
+            <p>CAPTURE THE MOMENT, PRESERVE THE STORY.</p>
+            <p class="text-xs text-gray-600">&copy; 2026 MMJ Digital Space. All rights reserved.</p>
         </div>
-      </div>
+    </footer>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <h3>Jelajahi MMJ</h3>
-            <p>Akses cepat ke fitur utama MMJ Digital Space.</p>
-          </div>
-
-          <div class="shortcut-grid">
-            <a class="shortcut-card" href="#/memory-archive">
-              <div class="icon">🖼️</div>
-              <h4>Memory Archive</h4>
-              <p>Dokumentasi foto dan video kegiatan sekolah.</p>
-              <span class="card-link">Buka arsip →</span>
-            </a>
-
-            <a class="shortcut-card" href="#/newsroom">
-              <div class="icon">📰</div>
-              <h4>Newsroom</h4>
-              <p>Berita, artikel, dan hasil liputan sekolah.</p>
-              <span class="card-link">Baca berita →</span>
-            </a>
-
-            <a class="shortcut-card" href="#/members-hub">
-              <div class="icon">👥</div>
-              <h4>Members Hub</h4>
-              <p>Struktur organisasi, profil anggota, dan divisi.</p>
-              <span class="card-link">Lihat anggota →</span>
-            </a>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- Memory Archive -->
-    <section class="page hidden" id="page-memory-archive">
-      <div class="container">
-        <div class="section-head">
-          <h3>Memory Archive</h3>
-          <p>Arsip dokumentasi foto dan video kegiatan sekolah.</p>
-        </div>
-
-        <div class="toolbar">
-          <input type="search" id="memorySearch" placeholder="Cari kegiatan, lokasi, atau tanggal..." />
-          <select id="memoryCategory">
-            <option value="all">Semua Kategori</option>
-            <option value="Acara Sekolah">Acara Sekolah</option>
-            <option value="Lomba">Lomba</option>
-            <option value="Ekstrakurikuler">Ekstrakurikuler</option>
-            <option value="Kegiatan Sosial">Kegiatan Sosial</option>
-          </select>
-        </div>
-
-        <div class="card-grid" id="memoryGrid"></div>
-        <p class="empty-state hidden" id="memoryEmpty">Dokumentasi tidak ditemukan.</p>
-      </div>
-    </section>
-
-    <!-- Newsroom -->
-    <section class="page hidden" id="page-newsroom">
-      <div class="container">
-        <div class="section-head">
-          <h3>Newsroom</h3>
-          <p>Berita, artikel, dan hasil liputan kegiatan sekolah.</p>
-        </div>
-
-        <div class="toolbar">
-          <input type="search" id="newsSearch" placeholder="Cari berita, penulis, atau kategori..." />
-          <select id="newsCategory">
-            <option value="all">Semua Kategori</option>
-            <option value="Prestasi">Prestasi</option>
-            <option value="Kegiatan">Kegiatan</option>
-            <option value="Pengumuman">Pengumuman</option>
-            <option value="Liputan">Liputan</option>
-          </select>
-        </div>
-
-        <div class="news-grid" id="newsGrid"></div>
-        <p class="empty-state hidden" id="newsEmpty">Berita tidak ditemukan.</p>
-      </div>
-    </section>
-
-    <!-- Detail berita -->
-    <section class="page hidden" id="page-news-detail">
-      <div class="container narrow">
-        <a href="#/newsroom" class="back-link">← Kembali ke Newsroom</a>
-        <article id="newsDetail"></article>
-      </div>
-    </section>
-
-    <!-- Members Hub -->
-    <section class="page hidden" id="page-members-hub">
-      <div class="container">
-        <div class="section-head">
-          <h3>Members Hub</h3>
-          <p>Pusat informasi anggota, struktur organisasi, dan divisi Multimedia Jurnalistik.</p>
-        </div>
-
-        <div class="org-grid">
-          <div class="info-card">
-            <h4>Struktur Organisasi</h4>
-            <p class="muted">Perbarui nama, jabatan, dan foto anggota melalui data anggota pada <code>script.js</code>.</p>
-            <div id="structureList" class="structure-list"></div>
-          </div>
-
-          <div class="info-card">
-            <h4>Divisi MMJ</h4>
-            <div id="divisionList" class="division-list"></div>
-          </div>
-        </div>
-
-        <div class="section-head">
-          <h4>Profil Anggota</h4>
-        </div>
-        <div class="member-grid" id="memberGrid"></div>
-
-        <div class="humas-panel" id="humasPanel">
-          <div class="section-head">
-            <h4>Divisi Humas</h4>
-            <p>Hubungan Masyarakat Multimedia Jurnalistik.</p>
-          </div>
-          <div class="humas-grid">
-            <div class="info-card">
-              <h5>Profil Divisi</h5>
-              <p id="humasProfile"></p>
-            </div>
-            <div class="info-card">
-              <h5>Tugas Utama</h5>
-              <ul id="humasTasks"></ul>
-            </div>
-            <div class="info-card">
-              <h5>Program Kerja</h5>
-              <ul id="humasPrograms"></ul>
-            </div>
-            <div class="info-card">
-              <h5>Kontak Resmi</h5>
-              <div id="humasContacts"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kritik & Saran -->
-    <section class="page hidden" id="page-kritik-saran">
-      <div class="container narrow">
-        <div class="section-head">
-          <h3>Kritik &amp; Saran</h3>
-          <p>Sampaikan masukan, evaluasi, atau saran untuk pengembangan MMJ Digital Space dan organisasi Multimedia Jurnalistik.</p>
-        </div>
-
-        <div class="feedback-card">
-          <div class="icon large">💬</div>
-          <h4>Formulir Kritik &amp; Saran</h4>
-          <p>
-            Klik tombol di bawah untuk membuka formulir resmi. Tautan saat ini masih menggunakan placeholder
-            dan dapat diganti dengan Google Forms atau Google Drive milik MMJ.
-          </p>
-          <a id="feedbackButton" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">
-            Buka Formulir Kritik &amp; Saran
-          </a>
-          <p class="muted small">Placeholder URL: <code>https://forms.gle/GANTI-DENGAN-LINK-ASLI</code></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Design Showcase -->
-    <section class="page hidden" id="page-design-showcase">
-      <div class="container">
-        <div class="section-head">
-          <h3>Desain-Desain</h3>
-          <p>Galeri karya desain anggota MMJ: poster, banner, feed media sosial, dan publikasi acara.</p>
-        </div>
-
-        <div class="toolbar">
-          <input type="search" id="designSearch" placeholder="Cari judul karya atau desainer..." />
-          <select id="designCategory">
-            <option value="all">Semua Kategori</option>
-            <option value="Poster">Poster</option>
-            <option value="Banner">Banner</option>
-            <option value="Feed Instagram">Feed Instagram</option>
-            <option value="Publikasi Acara">Publikasi Acara</option>
-          </select>
-        </div>
-
-        <div class="design-grid" id="designGrid"></div>
-        <p class="empty-state hidden" id="designEmpty">Karya desain tidak ditemukan.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>MMJ Digital Space</strong>
-        <p>Multimedia Jurnalistik · SMK Negeri 1 Singosari</p>
-      </div>
-      <p class="muted">CAPTURE THE MOMENT, PRESERVE THE STORY.</p>
-    </div>
-  </footer>
-
-  <!-- Lightbox -->
-  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">×</button>
-    <img id="lightboxImage" src="" alt="Tampilan besar" />
-    <p id="lightboxCaption"></p>
-  </div>
-
-  <script src="script.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 </body>
 </html>
